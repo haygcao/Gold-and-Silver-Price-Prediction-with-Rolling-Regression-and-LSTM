@@ -57,11 +57,11 @@ def create_dataframe(container):
     return df
     
 
-def save_data(commodity):
-    url = urls[commodity]
+def save_data(currency):
+    url = urls[currency]
     container = fetch_data(url)
     df = create_dataframe(container)
-    outfile = commodity + ".csv"
+    outfile = currency + ".csv"
     df.to_csv(outfile)
 
 save_data("gold")
