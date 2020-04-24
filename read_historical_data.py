@@ -5,8 +5,8 @@ import numpy as np
 import pandas as pd
 from dateutil import parser
 
-urls = {'gold':'https://www.investing.com/commodities/gold-historical-data',
-        'silver':'https://www.investing.com/commodities/silver-historical-data'}
+urls = {'gold':'https://www.investing.com/currencies/xau-usd-historical-data',
+        'silver':'https://www.investing.com/currencies/xag-usd-historical-data'}
 
 def fetch_data(url):
     """
